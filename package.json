@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/EASYMAK777/readme-generator/issues"
   },
-  "homepage": "https://github.com/EASYMAK777/readme-generator#readme"
+  "homepage": "https://github.com/EASYMAK777/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
 }
