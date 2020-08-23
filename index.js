@@ -8,3 +8,12 @@ console.log(fs);
 console.log(util);
 console.log(writeFileAsync);
 
+const questions = [
+    {
+        type:"input",
+        message: "what is the name of your project",
+        name:"title"
+    }
+];
+
+console.log(questions);
