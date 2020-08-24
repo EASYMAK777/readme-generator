@@ -9,7 +9,9 @@ console.log(util);
 console.log(writeFileAsync);
 
 // const questions = [
-//inquirer.prompt    
+//inquirer.prompt
+
+//refer to 14_ins_inquirer_demo
     {
         type:"input",
         message: "what is the name of your project",
