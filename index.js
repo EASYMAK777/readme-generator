@@ -8,7 +8,8 @@ console.log(fs);
 console.log(util);
 console.log(writeFileAsync);
 
-const questions = [
+// const questions = [
+//inquirer.prompt    
     {
         type:"input",
         message: "what is the name of your project",
