@@ -56,6 +56,8 @@
 const util = require("util");
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateReadMe = require("util")
+
 
 inquirer
     .prompt([
@@ -123,10 +125,9 @@ inquirer
 
         },
 
+        ])
 
-
-
-
-
-
-    ])
+        fs.writeFile('newReadMe.txt', 'Hello content!', function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+          });
