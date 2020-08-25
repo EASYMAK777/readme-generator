@@ -3,7 +3,7 @@
 
 
 var inquirer = require("inquirer");
-const { fstat } = require("fs");
+var fs = require("fs");
 
 
 
@@ -73,20 +73,34 @@ inquirer
 
         }
 
-    ]).then(function(data) {
+    ])
 
-        var filename = data.name.toLowerCase().split(' ').join('') + ".json";
+    fs.writeFile("newREADME.md", process.argv[2], function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
       
-        fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+        console.log("Success!");
       
-          if (err) {
-            return console.log(err);
-          }
-      
-          console.log("Success!");
-      
-        });
       });
+
+
+
+
+
+
+
+
+    //     .then(function(response) {
+
+//     if (response.confirm === response.password) {
+//       console.log("Success!");
+//     }
+//     else {
+//       console.log("You forgot your password already?!");
+//     }
+//   });
 
 
 
