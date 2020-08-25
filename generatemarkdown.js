@@ -1,9 +1,20 @@
 function generateMarkdown(data) {
-    return `# ${data.title}`;
+  return `
+  ![Badge](https://img.shields.io/badge/license-greatjob-red)
+  # ${data.name};
+  `
+  
+
+    
+
+
+
+
+
+
   }
 
   
-
 
   
   module.exports = generateMarkdown;
