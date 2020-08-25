@@ -125,23 +125,26 @@ inquirer
 
         },
 
-        ]).then(function(data) {
+    ])
+    .then(function (answers) {
+         console.log(answers);
+        var jsonString = JSON.stringify(answers, null, 2);
 
-            var filename = data.name.toLowerCase().split(' ').join('') + ".json";
-          
-            fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
-          
-              if (err) {
+        var filename = data.name.toLowerCase().split(' ').join('') + ".json";
+
+        fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
+
+            if (err) {
                 return console.log(err);
-              }
-          
-              console.log("Success!");
-          
-            });
-          });
+            }
+
+            console.log("Success!");
+
+        });
+    });
 
         fs.writeFile('newReadMe.md', 'Hello content!', function (err) {
             if (err) throw err;
         });
-        
+
         console.log('Saved!');
