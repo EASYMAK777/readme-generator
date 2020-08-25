@@ -92,16 +92,5 @@ inquirer
 
 
 
-    //     .then(function(response) {
-
-//     if (response.confirm === response.password) {
-//       console.log("Success!");
-//     }
-//     else {
-//       console.log("You forgot your password already?!");
-//     }
-//   });
-
-
-
+    
     
