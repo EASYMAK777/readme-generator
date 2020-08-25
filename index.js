@@ -1,5 +1,4 @@
 // const inquirer = require('inquirer');
-// const fs = require("fs");
 // const util = require("util");
 // const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -55,7 +54,8 @@
 
 
 
-var inquirer = require("inquirer");
+const fs = require("fs");
+const inquirer = require("inquirer");
 
 inquirer
     .prompt([
@@ -123,19 +123,16 @@ inquirer
 
         },
 
-        
+
 
 
 
 
 
     ])
-    .then(function (response) {
+function generateMarkdown(response) {
 
-        if (response.confirm === response.password) {
-            console.log("Success!");
-        }
-        else {
-            console.log("You forgot your password already?!");
-        }
-    });
+    return 
+      # ${ response.title }
+
+});

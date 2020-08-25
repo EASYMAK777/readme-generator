@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EASYMAK777/readme-generator#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "inquirer": "^7.3.3",
     "utils": "^0.3.1"
   }
