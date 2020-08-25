@@ -125,9 +125,23 @@ inquirer
 
         },
 
-        ])
+        ]).then(function(data) {
 
-        fs.writeFile('newReadMe.txt', 'Hello content!', function (err) {
-            if (err) throw err;
-            console.log('Saved!');
+            var filename = data.name.toLowerCase().split(' ').join('') + ".json";
+          
+            fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+          
+              if (err) {
+                return console.log(err);
+              }
+          
+              console.log("Success!");
+          
+            });
           });
+
+        fs.writeFile('newReadMe.md', 'Hello content!', function (err) {
+            if (err) throw err;
+        });
+        
+        console.log('Saved!');
