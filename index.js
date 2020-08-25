@@ -1,62 +1,10 @@
-// const inquirer = require('inquirer');
-// const writeFileAsync = util.promisify(fs.writeFile);
-
-// console.log(inquirer);
-// console.log(fs);
-// console.log(util);
-// console.log(writeFileAsync);
-
-// const questions = [
-// //inquirer.prompt
-
-// //refer to 14_ins_inquirer_demo
-//     {
-//         type:"input",
-//         message: "what is the name of your project",
-//         name:"title"
-//     }
-// ];
-
-// console.log(questions);
-
-
-// // var inquirer = require("inquirer");
-
-// // inquirer
-// //   .prompt([
-// //     {
-// //       type: "input",
-// //       message: "What is your user name?",
-// //       name: "username"
-// //     },
-// //     {
-// //       type: "password",
-// //       message: "What is your password?",
-// //       name: "password"
-// //     },
-// //     {
-// //       type: "password",
-// //       message: "Re-enter password to confirm:",
-// //       name: "confirm"
-// //     }
-// //   ])
-// //   .then(function(response) {
-
-// //     if (response.confirm === response.password) {
-// //       console.log("Success!");
-// //     }
-// //     else {
-// //       console.log("You forgot your password already?!");
-// //     }
-// //   });
 
 
 
 
-const util = require("util");
-const fs = require("fs");
-const inquirer = require("inquirer");
-const generateReadMe = require("util")
+var inquirer = require("inquirer");
+const { fstat } = require("fs");
+
 
 
 inquirer
@@ -123,28 +71,23 @@ inquirer
             name: "link"
 
 
-        },
+        }
 
-    ])
-    .then(function (answers) {
-         console.log(answers);
-        var jsonString = JSON.stringify(answers, null, 2);
+    ]).then(function(data) {
 
         var filename = data.name.toLowerCase().split(' ').join('') + ".json";
-
-        fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
-
-            if (err) {
-                return console.log(err);
-            }
-
-            console.log("Success!");
-
+      
+        fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+      
+          if (err) {
+            return console.log(err);
+          }
+      
+          console.log("Success!");
+      
         });
-    });
+      });
 
-        fs.writeFile('newReadMe.md', 'Hello content!', function (err) {
-            if (err) throw err;
-        });
 
-        console.log('Saved!');
+
+    
