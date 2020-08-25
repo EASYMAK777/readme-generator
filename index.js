@@ -130,9 +130,3 @@ inquirer
 
 
     ])
-function generateMarkdown(response) {
-
-    return 
-      # ${ response.title }
-
-});
