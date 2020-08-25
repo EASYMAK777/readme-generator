@@ -12,7 +12,7 @@ const questions = [
     {
         type: "input",
         message: "Enter your table of contents",
-        name: "table of contents"
+        name: "contents"
     },
 
     {
@@ -78,7 +78,7 @@ return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 
 inquirer.prompt(questions).then(answer =>{
     console.log(answer);
-    writeToFile("README.md", generateMarkdown({...answer}))
+    writeToFile("newREADME.md", generateMarkdown({...answer}))
 }) 
 
 

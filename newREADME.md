@@ -1,15 +1,14 @@
-function generateMarkdown(data) {
-    return `![(https://img.shields.io/badge/licence-readme-red)]
+![(https://img.shields.io/badge/licence-readme-red)]
     
     
      
-    #${data.name}
+    #afd
 
     # Description
 
-    ${data.description}
+    adf
 
-    ${data.contents}
+    ad
 
 
 
@@ -26,13 +25,4 @@ function generateMarkdown(data) {
 
     
 
-    `;
-
     
-  }
-    
-  
-
-  
-  module.exports = generateMarkdown;
-  
