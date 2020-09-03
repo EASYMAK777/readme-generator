@@ -1,6 +1,6 @@
     https://youtu.be/7yxCXcItgJU
 
-![readme-generator-demo-gif](./img/gif.gif);
+![readme-generator-demo-gif](./assets/img/gif.gif);
 
 ![(https://img.shields.io/badge/licence-readme-red)]
     
