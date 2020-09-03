@@ -3,7 +3,7 @@ function generateMarkdown(data) {
     
     ##Title
      
-    ${data.name}
+    ${data.title}
 
     ## Description
 
@@ -11,10 +11,9 @@ function generateMarkdown(data) {
 
     
 
-    ${data.contents}
-
-
-
+    
+    
+    
     ## Table of Contents
     * [installation](#installation)
     * [usage](#usage)
@@ -23,6 +22,7 @@ function generateMarkdown(data) {
     * [tests](#tests)
     * [questions](#questions)
     
+    ${data.contents}
 
   ## Installation
   
