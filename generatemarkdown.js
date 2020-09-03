@@ -24,27 +24,27 @@ function generateMarkdown(data) {
     
     ${data.contents}
 
-  ## Installation
+    ## Installation
   
-  ${data.install}
+    ${data.install}
 
-  ## Usage
+    ## Usage
 
-  ${data.usage}
+    ${data.usage}
 
-  ##License
+    ##License
 
-  ![github License](https://img.shields.io/badge/licence-${data.license}-red.svg)
+    ![github License](https://img.shields.io/badge/licence-${data.license}-red.svg)
 
-  ## Contributing memebers
-  ${data.contributing}
+    ## Contributing memebers
+    ${data.contributing}
 
-  ## Tests
-  ${data.tests}
+    ## Tests
+    ${data.tests}
 
-  ## Questsions
+    ## Questsions
 
-  Contact me if you have questions at [GitHub](hittp:github.com/${data.githubUsername}) Or, email me at ${data.email}.`;
+    Contact me if you have questions at [GitHub](hittp:github.com/${data.githubUsername}) Or, email me at ${data.email}.`;
 
     
   }
