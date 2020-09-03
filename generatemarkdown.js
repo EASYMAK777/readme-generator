@@ -3,7 +3,7 @@ function generateMarkdown(data) {
     
     ##Title
      
-    #${data.name}
+    ${data.name}
 
     ## Description
 
@@ -44,14 +44,7 @@ function generateMarkdown(data) {
 
   ## Questsions
 
-  Contact me if you have questions at [GitHub](hittp:github.com/${data.githubUsername}) Or, email me at ${data.email}.
-    
-
-    
-
-    
-
-    `;
+  Contact me if you have questions at [GitHub](hittp:github.com/${data.githubUsername}) Or, email me at ${data.email}.`;
 
     
   }

@@ -2,15 +2,15 @@
     
     ##Title
      
-    #Read generator
+    #Readme Generator
 
     ## Description
 
-    its awesome
+    This project is used to generate a readme doc with markdown for ease in making new readme docs for your projects
 
     
 
-    table of contents
+    
 
 
 
@@ -19,29 +19,29 @@
     * [usage](#usage)
     * [license](#license)
     * [contributing](#contributing)
-    * [tests](#tests)g
+    * [tests](#tests)
     * [questions](#questions)
     
 
   ## Installation
   
-  undefined
+  open terminal in file, type node index.js and press enter.  Follow prompts and viola!! A brand new read me doc is generated
 
   ## Usage
 
-  i dont
+  I want it to be used for developers in order to generate a readme and save time
 
   ##License
 
   ![github License](https://img.shields.io/badge/licence--red.svg)
 
-  ## Contributing memebers
-  undefined
+  ## Contributing members
+  Juan Flores
 
   ## Tests
-  dont test it
+  first you must npm i and dependancies will download into the file.  Once you have installed dependancies you just type in node index.js in the built in terminal.  Fill in the information asked and viola a readme is generated
 
-  ## Questsions
+  ## Questions
 
   Contact me if you have questions at [GitHub](hittp:github.com/undefined) Or, email me at undefined.
     
