@@ -1,5 +1,5 @@
 function generateMarkdown(data) {
-    return `![(https://img.shields.io/badge/licence-readme-red)]
+  return `![(https://img.shields.io/badge/licence-readme-red)]
     
     ##Title
      
@@ -44,10 +44,10 @@ function generateMarkdown(data) {
 
     ## Questsions
 
-    Contact me if you have questions at [GitHub](hittp:github.com/${data.githubUsername}) Or, email me at ${data.email}.`;
-
+    Contact me if you have questions at [GitHub](hittp:github.com/${data.githubUsername}] Or, email me at ${data.email})`;
+  
     
-  }
+}
     
   
 
